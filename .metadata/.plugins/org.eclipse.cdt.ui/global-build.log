@@ -1,0 +1,93 @@
+
+**** Clean-only build of configuration Debug for project Copy of MarsMiniRover ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 clean -O 
+cleaning ../src/sysbios ...
+DEL /F  "../src/makefile.libs" "Copy of MarsMiniRover.hex"  "configPkg\linker.cmd" "configPkg\compiler.opt"  "Copy of MarsMiniRover.out" 
+RMDIR /S/Q  "configPkg\" 
+DEL /F "EK_TM4C123GXL.obj" "E_Paper.obj" "Nokia_5110.obj" "TivaC_GPIO_Config.obj" "main.obj" 
+DEL /F "EK_TM4C123GXL.d" "E_Paper.d" "Nokia_5110.d" "TivaC_GPIO_Config.d" "main.d" 
+Could Not Find C:\Users\Alamin_Bird\Documents\CCS_SeniorDesign\Copy of MarsMiniRover\src\../src/makefile.libs
+Could Not Find C:\Users\Alamin_Bird\Documents\CCS_SeniorDesign\Copy of MarsMiniRover\Debug\Copy of MarsMiniRover.hex
+Could Not Find C:\Users\Alamin_Bird\Documents\CCS_SeniorDesign\Copy of MarsMiniRover\Debug\Copy of MarsMiniRover.out
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Copy of MarsMiniRover ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: Entering directory 'C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover/Debug'
+'Building file: ../app.cfg'
+'Invoking: XDCtools'
+"C:/ti/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirtos_tivac_2_16_01_14/packages;C:/ti/tirtos_tivac_2_16_01_14/products/tidrivers_tivac_2_16_01_13/packages;C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages;C:/ti/tirtos_tivac_2_16_01_14/products/ndk_2_25_00_09/packages;C:/ti/tirtos_tivac_2_16_01_14/products/uia_2_00_05_50/packages;C:/ti/tirtos_tivac_2_16_01_14/products/ns_1_11_00_10/packages;C:/ti/ccsv7/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.tiva:TM4C123GH6PM -r release -c "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path=\"C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover\" --include_path=\"C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover\" --include_path=\"C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b\" --include_path=\"C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/posix\" --include_path=\"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include\" --define=ccs=\"ccs\" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../app.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring app.xem4f from package/cfg/app_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/Users/ALAMIN~1/DOCUME~1/CCS_SE~1/COPYOF~1/src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory `C:/Users/ALAMIN~1/DOCUME~1/CCS_SE~1/COPYOF~1/src/sysbios'
+clem4f C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/BIOS.c ...
+asmem4f C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/Users/ALAMIN~1/DOCUME~1/CCS_SE~1/COPYOF~1/src/sysbios'
+Build of libraries done.
+clem4f package/cfg/app_pem4f.c ...
+'Finished building: ../app.cfg'
+' '
+gmake[1]: Leaving directory 'C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover/Debug'
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+'Building file: ../Nokia_5110.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="Nokia_5110.d" --cmd_file="configPkg/compiler.opt" "../Nokia_5110.c"
+"../Nokia_5110.c", line 17: warning #552-D: variable "CursorX" was set but never used
+"../Nokia_5110.c", line 18: warning #552-D: variable "CursorY" was set but never used
+'Finished building: ../Nokia_5110.c'
+' '
+'Building file: ../E_Paper.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="E_Paper.d" --cmd_file="configPkg/compiler.opt" "../E_Paper.c"
+'Finished building: ../E_Paper.c'
+' '
+'Building file: ../EK_TM4C123GXL.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="EK_TM4C123GXL.d" --cmd_file="configPkg/compiler.opt" "../EK_TM4C123GXL.c"
+'Finished building: ../EK_TM4C123GXL.c'
+' '
+'Building file: ../TivaC_GPIO_Config.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="TivaC_GPIO_Config.d" --cmd_file="configPkg/compiler.opt" "../TivaC_GPIO_Config.c"
+'Finished building: ../TivaC_GPIO_Config.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/Users/Alamin_Bird/Documents/CCS_SeniorDesign/Copy of MarsMiniRover" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b" --include_path="C:/ti/tirtos_tivac_2_16_01_14/products/bios_6_45_02_31/packages/ti/sysbios/posix" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="main.d" --cmd_file="configPkg/compiler.opt" "../main.c"
+'Finished building: ../main.c'
+' '
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+'Building target: Copy of MarsMiniRover.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=ccs --define=TIVAWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"Copy of MarsMiniRover.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Copy of MarsMiniRover_linkInfo.xml" --rom_model -o "Copy of MarsMiniRover.out" "./EK_TM4C123GXL.obj" "./E_Paper.obj" "./Nokia_5110.obj" "./TivaC_GPIO_Config.obj" "./main.obj" "../EK_TM4C123GXL.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b/grlib/ccs/Debug/grlib.lib" -l"C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b/usblib/ccs/Debug/usblib.lib" -l"C:/ti/tirtos_tivac_2_16_01_14/products/TivaWare_C_Series-2.1.1.71b/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: Copy of MarsMiniRover.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Copy of MarsMiniRover ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Nothing to be done for 'all'.
+making ../src/sysbios/sysbios.aem4f ...
+gmake[2]: Nothing to be done for 'all'.
+
+**** Build Finished ****
